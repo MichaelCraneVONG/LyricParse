@@ -15,6 +15,9 @@
 		6FBADDB81C97A38300A1FA84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FBADDB61C97A38300A1FA84 /* LaunchScreen.storyboard */; };
 		6FBADDC31C97A38300A1FA84 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBADDC21C97A38300A1FA84 /* __Tests.m */; };
 		6FBADDCE1C97A38300A1FA84 /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBADDCD1C97A38300A1FA84 /* __UITests.m */; };
+		6FBADDE01C97AE8900A1FA84 /* 朴树-平凡之路.lrc in Resources */ = {isa = PBXBuildFile; fileRef = 6FBADDDE1C97AE8900A1FA84 /* 朴树-平凡之路.lrc */; };
+		6FBADDE11C97AE8900A1FA84 /* 朴树-平凡之路.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FBADDDF1C97AE8900A1FA84 /* 朴树-平凡之路.mp3 */; };
+		6FE161301C9821880045CA89 /* LrcParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE1612F1C9821880045CA89 /* LrcParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		6FBADDC91C97A38300A1FA84 /* 歌词UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "歌词UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FBADDCD1C97A38300A1FA84 /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
 		6FBADDCF1C97A38300A1FA84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6FBADDDE1C97AE8900A1FA84 /* 朴树-平凡之路.lrc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "朴树-平凡之路.lrc"; sourceTree = "<group>"; };
+		6FBADDDF1C97AE8900A1FA84 /* 朴树-平凡之路.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "朴树-平凡之路.mp3"; sourceTree = "<group>"; };
+		6FE1612E1C9821880045CA89 /* LrcParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LrcParser.h; sourceTree = "<group>"; };
+		6FE1612F1C9821880045CA89 /* LrcParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LrcParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 		6FBADDA71C97A38300A1FA84 /* 歌词 */ = {
 			isa = PBXGroup;
 			children = (
+				6FE161351C98397E0045CA89 /* 歌词解析 */,
 				6FBADDAB1C97A38300A1FA84 /* AppDelegate.h */,
 				6FBADDAC1C97A38300A1FA84 /* AppDelegate.m */,
 				6FBADDAE1C97A38300A1FA84 /* ViewController.h */,
@@ -109,6 +117,7 @@
 				6FBADDB41C97A38300A1FA84 /* Assets.xcassets */,
 				6FBADDB61C97A38300A1FA84 /* LaunchScreen.storyboard */,
 				6FBADDB91C97A38300A1FA84 /* Info.plist */,
+				6FBADDE21C97AE9300A1FA84 /* song */,
 				6FBADDA81C97A38300A1FA84 /* Supporting Files */,
 			);
 			path = "歌词";
@@ -138,6 +147,24 @@
 				6FBADDCF1C97A38300A1FA84 /* Info.plist */,
 			);
 			path = "歌词UITests";
+			sourceTree = "<group>";
+		};
+		6FBADDE21C97AE9300A1FA84 /* song */ = {
+			isa = PBXGroup;
+			children = (
+				6FBADDDE1C97AE8900A1FA84 /* 朴树-平凡之路.lrc */,
+				6FBADDDF1C97AE8900A1FA84 /* 朴树-平凡之路.mp3 */,
+			);
+			name = song;
+			sourceTree = "<group>";
+		};
+		6FE161351C98397E0045CA89 /* 歌词解析 */ = {
+			isa = PBXGroup;
+			children = (
+				6FE1612E1C9821880045CA89 /* LrcParser.h */,
+				6FE1612F1C9821880045CA89 /* LrcParser.m */,
+			);
+			name = "歌词解析";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +272,9 @@
 			files = (
 				6FBADDB81C97A38300A1FA84 /* LaunchScreen.storyboard in Resources */,
 				6FBADDB51C97A38300A1FA84 /* Assets.xcassets in Resources */,
+				6FBADDE01C97AE8900A1FA84 /* 朴树-平凡之路.lrc in Resources */,
 				6FBADDB31C97A38300A1FA84 /* Main.storyboard in Resources */,
+				6FBADDE11C97AE8900A1FA84 /* 朴树-平凡之路.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +302,7 @@
 				6FBADDB01C97A38300A1FA84 /* ViewController.m in Sources */,
 				6FBADDAD1C97A38300A1FA84 /* AppDelegate.m in Sources */,
 				6FBADDAA1C97A38300A1FA84 /* main.m in Sources */,
+				6FE161301C9821880045CA89 /* LrcParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +526,7 @@
 				6FBADDD41C97A38300A1FA84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FBADDD51C97A38300A1FA84 /* Build configuration list for PBXNativeTarget "歌词Tests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +535,7 @@
 				6FBADDD71C97A38300A1FA84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FBADDD81C97A38300A1FA84 /* Build configuration list for PBXNativeTarget "歌词UITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +544,7 @@
 				6FBADDDA1C97A38300A1FA84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
